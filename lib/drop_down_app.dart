@@ -8,14 +8,16 @@ class DropDownApp extends StatefulWidget {
 }
 
 class _DropDownAppState extends State<DropDownApp> {
+  String? _selectedItem = 'One';
+
   @override
   Widget build(BuildContext context) {
-    String? _selectedItem = 'One';
 
     return Scaffold(
       appBar: AppBar(title: Text('Dropdown Page'),
       backgroundColor: Colors.greenAccent
       ),
+
       body: Center(
         child: DropdownButton<String>(
           value: _selectedItem,

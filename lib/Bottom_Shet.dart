@@ -5,17 +5,12 @@ class BottomShet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
-  }
-}
-
-class BotSheet extends StatelessWidget {
-  @override
-  Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
         title: Text("Bottom Shet Page"),
+        backgroundColor: Colors.greenAccent,
       ),
+
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -27,12 +22,6 @@ class BotSheet extends StatelessWidget {
               child: Text('Show Modal BottomSheet'),
             ),
             SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                _showBottomSheet(context);
-              },
-              child: Text('Show Persistent BottomSheet'),
-            ),
           ],
         ),
       ),

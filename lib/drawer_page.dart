@@ -4,7 +4,6 @@ import 'package:pertemuan4/botNavbar.dart';
 import 'package:pertemuan4/dialog.dart';
 import 'package:pertemuan4/drop_down_app.dart';
 import 'package:pertemuan4/nav.dart';
-import 'package:pertemuan4/navbar.dart';
 import 'package:pertemuan4/snackbar_page.dart';
 import 'package:pertemuan4/statful.dart';
 import 'package:pertemuan4/tabbar.dart';
@@ -20,6 +19,7 @@ class DrawerPage extends StatelessWidget {
         title: Text('Drawer Page'),
         backgroundColor: Colors.blueAccent,
       ),
+
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
@@ -28,6 +28,7 @@ class DrawerPage extends StatelessWidget {
               decoration: BoxDecoration(color: Colors.blue),
               child: Text('Drawer Header', style: TextStyle(color: Colors.white, fontSize: 24)),
             ),
+
             ListTile(
               title: Text('Statefull'),
               onTap: () {
@@ -92,13 +93,13 @@ class DrawerPage extends StatelessWidget {
               },
             ),
 
-            // ListTile(
-            //   title: Text('Drawer'),
-            //   onTap: () {
-            //     Navigator.push(context,
-            //         MaterialPageRoute(builder: (BuildContext context) => DrawerPage()));
-            //   },
-            // ),
+            ListTile(
+              title: Text('Drawer'),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (BuildContext context) => DrawerPage()));
+              },
+            ),
 
             ListTile(
               title: Text('Navigation'),

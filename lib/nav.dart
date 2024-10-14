@@ -13,7 +13,7 @@ class _NavState extends State<Nav> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home Page"),
+        title: Text("Navigation Page"),
         backgroundColor: Colors.green,
       ),
       body: Center(child: ElevatedButton(onPressed: () {

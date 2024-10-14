@@ -14,8 +14,9 @@ class MyDialog extends StatelessWidget {
               title: Text('Dialog Page'),
               backgroundColor: Colors.greenAccent,
             ),
+
         body: AlertDialog(
-          title: Text('WARNING'),
+          title: Text('WARNING ALERT!!!'),
           content: Text('Yakin!! mau pindah ke drawer page???'),
           actions: <Widget>[
             TextButton(

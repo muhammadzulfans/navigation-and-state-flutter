@@ -11,14 +11,17 @@ class _BotnavbarState extends State<Botnavbar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('BottomNavigationBar Page'),
+      appBar: AppBar(
+        title: Text('BottomNavigationBar Page'),
         backgroundColor: Colors.green,
       ),
+
       body: Center(
         child: Text('Selected index: $_currentIndex'),
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
+        backgroundColor: Colors.white30,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),

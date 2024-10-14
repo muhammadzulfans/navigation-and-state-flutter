@@ -20,10 +20,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'My App', // Judul aplikasi
+      // Judul aplikasi
+      title: 'My App',
       theme: ThemeData(
       ),
-      home: DrawerPage(), // Pastikan Homepage adalah widget stateless atau stateful
+
+      // Pastikan Homepage adalah widget stateless atau stateful
+      home: DrawerPage(),
     );
   }
 }

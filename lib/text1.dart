@@ -8,6 +8,8 @@ class Text1 extends StatefulWidget {
 }
 
 class _Text1State extends State<Text1> {
+  final TextEditingController _controller = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,12 +18,13 @@ class _Text1State extends State<Text1> {
         backgroundColor: Colors.greenAccent,
       ),
 
-      body: Center(
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
         child: TextField(
-          obscureText: true,
+          controller: _controller,
           decoration: InputDecoration(
-              labelText: "Password",
-              border: OutlineInputBorder(borderRadius: BorderRadius.circular(50))
+            labelText: 'Enter text',
+            border: OutlineInputBorder(),
           ),
         ),
       ),
